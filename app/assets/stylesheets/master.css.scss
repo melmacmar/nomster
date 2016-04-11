@@ -1,4 +1,4 @@
-weather.png.booyah-box {
+.booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -9,10 +9,20 @@ weather.png.booyah-box {
   margin-bottom:15px;
   padding:20px;
 }
+
 h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
 }
-.body {
+
+body {
  background: url('/assets/weather.png');
+ font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+
+}
+
+.navbar.navbar-inverse {
+  background:url('/assets/symphony.png');
+  border-radius: 0; box-shadow: 0px 1px 3px #2a2a2a;
+  box-shadow: 0px 1px 3px #2a2a2a;
 }
