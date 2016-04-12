@@ -1,4 +1,5 @@
 Nomster::Application.configure do
+    config.action_mailer.default_url_options = { host: 'localhost:3030' }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -21,6 +22,8 @@ Nomster::Application.configure do
 
   # Raise an error on page load if there are pending migrations
   config.active_record.migration_error = :page_load
+
+
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large

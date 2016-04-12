@@ -40,6 +40,7 @@ gem 'sass-rails'
 ## Gemfile for Rails 3+, Sinatra, or Merb
 gem 'kaminari'
 gem 'simple_form'
+gem 'devise', '>= 3.2.4'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
