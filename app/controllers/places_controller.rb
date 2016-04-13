@@ -19,6 +19,7 @@ def create
   end
 end
 
+
   def show
      @place = Place.find(params[:id])
   end
