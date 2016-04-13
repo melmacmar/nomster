@@ -18,7 +18,7 @@ def create
     render :new, status: :unprocessable_entity
   end
 
-  def show
+def show
   @place = Place.find(params[:id])
   @comment = Comment.new
 end
