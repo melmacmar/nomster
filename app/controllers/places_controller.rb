@@ -17,8 +17,10 @@ def create
   else
     render :new, status: :unprocessable_entity
   end
+end
 
-def show
+
+  def show
   @place = Place.find(params[:id])
   @comment = Comment.new
 end
@@ -29,13 +31,10 @@ end
 
 def update
   @place = Place.find(params[:id])
+
   if @place.user != current_user
     return render text: 'Not Allowed', status: :forbidden
   end
-
-  @place.update_attributes(place_params)
-  redirect_to root_path
-end
 
   @place.update_attributes(place_params)
   if @place.valid?
