@@ -1,4 +1,4 @@
-cclass Place < ActiveRecord::Base
+class Place < ActiveRecord::Base
   belongs_to :user
   has_many :comments
 
