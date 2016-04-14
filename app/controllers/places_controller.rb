@@ -15,7 +15,7 @@ def create
   if @place.valid?
     redirect_to root_path
   else
-    render :new, status: :unprocessable_entity
+    return render :new, status: :unprocessable_entity
   end
 
   def place_params
@@ -45,7 +45,7 @@ end
   if @place.valid?
     redirect_to root_path
   else
-    render :edit, status: :unprocessable_entity
+    return render :edit, status: :unprocessable_entity
   end
 end
 
