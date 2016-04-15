@@ -27,6 +27,11 @@ def create
   @comment = Comment.new
   end
 
+  def photo
+  @place = Place.find(params[:id])
+  @comment = Comment.new
+end
+
  def edit
   @place = Place.find(params[:id])
  end
@@ -48,6 +53,8 @@ end
     return render :edit, status: :unprocessable_entity
   end
 end
+
+
 
 def destroy
   @place = Place.find(params[:id])
